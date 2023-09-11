@@ -6,6 +6,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
+            Item MagicWand = new Item ("Magic Wand","Attachment",2,10,0);
         }
     }
 }

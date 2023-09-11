@@ -8,4 +8,5 @@ public class Wizard {
     private float Health = 100;
     private ArrayList Items;
     public Wizard() {}
+
 }
