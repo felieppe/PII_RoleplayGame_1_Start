@@ -10,7 +10,17 @@ public class Wizard {
         this.Name = name;
     }
 
+    public string GetName() {
+        return this.Name;
+    }
+
     public void AddItem(Item item) {
         Items.Add(item);
+    }
+
+    public void SetName(string name) {
+        if (string.IsNullOrEmpty(name)) {
+            this.Name = name;
+        }
     }
 }
