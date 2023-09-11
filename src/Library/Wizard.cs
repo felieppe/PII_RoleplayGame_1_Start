@@ -23,4 +23,8 @@ public class Wizard {
             this.Name = name;
         }
     }
+
+    public void Heal() {
+        this.Health = 100;
+    }
 }
