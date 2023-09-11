@@ -24,8 +24,10 @@ public class Wizard {
         }
     }
 
-    public void Heal() {
-        this.Health = 100;
+    public void Heal(float? h) {
+        if (h != null) {
+            this.Health += (float) h;
+        } else { this.Health = 100; }
     }
     public void Damage(int dmg) {
         this.Health -= dmg;
