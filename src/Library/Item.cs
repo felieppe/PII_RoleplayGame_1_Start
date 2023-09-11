@@ -13,4 +13,20 @@ public class Item {
         this.DamagePoints = dmg;
         this.DefensePoints = dfn;
     }
+
+    public int GetDamage() {
+        return this.DamagePoints;
+    }
+    public int GetDefense() {
+        return this.DefensePoints;
+    }
+    public string GetType() {
+        return this.Type;
+    }
+    public int GetCost() {
+        return this.Cost;
+    }
+    public string GetName() {
+        return this.Name;
+    }
 }
