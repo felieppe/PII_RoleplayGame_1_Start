@@ -27,4 +27,7 @@ public class Wizard {
     public void Heal() {
         this.Health = 100;
     }
+    public void Damage(int dmg) {
+        this.Health -= dmg;
+    }
 }
