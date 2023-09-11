@@ -29,7 +29,7 @@ public class Wizard {
             this.Health += (float) h;
         } else { this.Health = 100; }
     }
-    public void Damage(int dmg) {
+    public void Damage(float dmg) {
         this.Health -= dmg;
     }
 }
