@@ -6,7 +6,7 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace Program;
 
-public class Magicwand{
+public class MagicWand{
     
     private int damage = 10;
     private int defense = 0; 
