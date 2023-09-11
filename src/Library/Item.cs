@@ -1,8 +1,8 @@
 namespace Program;
 
 public class Item {
-    private int DamagePoints;
-    private int DefensePoints;
+    private int Damage;
+    private int Defense;
     private string Type;
     private int Cost;
     private string Name;
@@ -10,15 +10,15 @@ public class Item {
         this.Name = name;
         this.Type = type;
         this.Cost = cost;
-        this.DamagePoints = dmg;
-        this.DefensePoints = dfn;
+        this.Damage = dmg;
+        this.Defense = dfn;
     }
 
     public int GetDamage() {
-        return this.DamagePoints;
+        return this.Damage;
     }
     public int GetDefense() {
-        return this.DefensePoints;
+        return this.Defense;
     }
     public string GetType() {
         return this.Type;
