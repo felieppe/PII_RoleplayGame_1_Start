@@ -9,4 +9,7 @@ public class Wizard {
     private ArrayList Items;
     public Wizard() {}
 
+    public void AddItem(Item item) {
+        Items.Add(item);
+    }
 }
