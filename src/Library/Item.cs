@@ -6,6 +6,7 @@ public class Item {
     private string Type;
     private int Cost;
     private string Name;
+    
     public Item(string name, string type, int cost, int dmg, int dfn) {
         this.Name = name;
         this.Type = type;
