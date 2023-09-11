@@ -8,8 +8,7 @@ public class SpellBook{
 
     public ArrayList GetSpells(){
         return this.Spells;
-
     }
-    }
+}
 
 
