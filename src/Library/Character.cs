@@ -2,11 +2,11 @@ using System.Collections;
 
 namespace Program;
 
-public class Wizard {
+public class Character {
     private string Name;
     private float Health = 100;
     private ArrayList Items;
-    public Wizard(string name) {
+    public Character(string name) {
         this.Name = name;
     }
 
