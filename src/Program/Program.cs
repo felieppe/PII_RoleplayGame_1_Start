@@ -9,7 +9,9 @@ namespace Program
             Item magicWand = new Item ("Magic Wand","Attachment",2,10,0);
             SpellBook sbook = new SpellBook();
 
-            Character wiz = new Character("Alfred The Wizard");
+            CharacterType type = new CharacterType();
+            type.SetType("Wizard");
+            Character wiz = new Character("Alfred The Wizard", type);
             wiz.AddItem(magicWand);
         }
     }
