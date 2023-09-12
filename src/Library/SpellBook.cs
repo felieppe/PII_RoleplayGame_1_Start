@@ -9,6 +9,12 @@ public class SpellBook{
     public ArrayList GetSpells(){
         return this.Spells;
     }
+
+    public void AddSpell(Spell sp) {
+        if (!(Spells.Contains(sp))) {
+            Spells.Add(sp);
+        }
+    }
 }
 
 
