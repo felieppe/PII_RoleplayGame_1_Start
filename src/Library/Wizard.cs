@@ -32,6 +32,14 @@ public class Wizard {
 
         return dmg;
     }
+    public float GetTotalDefense() {
+        float dfn = 0;
+        foreach (Item i in Items) {
+            dfn += i.GetDefense();
+        }
+
+        return dfn;
+    }
 
     public void Heal(float? h) {
         if (h != null) {
