@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Test.Library
 {
-    public class ExampleTest
+    public class RoleplayGameTests
     {
         [Test]
         public void dummyTest()
