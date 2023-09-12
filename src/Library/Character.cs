@@ -7,8 +7,9 @@ public class Character {
     private CharacterType Type;
     private float Health = 100;
     private ArrayList Items;
-    public Character(string name) {
+    public Character(string name, CharacterType type) {
         this.Name = name;
+        this.Type = type;
     }
 
     public string GetName() {
