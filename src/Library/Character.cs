@@ -24,6 +24,11 @@ public class Character {
             this.Name = name;
         }
     }
+    public void SetType(CharacterType type) {
+        if (type != null) {
+            this.Type = type;
+        }
+    }
 
     public CharacterType GetType() {
         return this.Type;
