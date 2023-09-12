@@ -9,10 +9,9 @@ public class CharacterType {
 
     public CharacterType() {}
 
-    public bool SetType(string ty) {
+    public void SetType(string ty) {
         if (AvailableTypes.Contains(ty)) {
             this.ActualType = ty;
-            return true;
-        } else { return false; }
+        }
     }
 }
