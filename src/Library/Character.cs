@@ -4,6 +4,7 @@ namespace Program;
 
 public class Character {
     private string Name;
+    private CharacterType Type;
     private float Health = 100;
     private ArrayList Items;
     public Character(string name) {
@@ -24,6 +25,9 @@ public class Character {
         }
     }
 
+    public CharacterType GetType() {
+        return this.Type;
+    }
     public float GetTotalDamage() {
         float dmg = 0;
         foreach (Item i in Items) {
