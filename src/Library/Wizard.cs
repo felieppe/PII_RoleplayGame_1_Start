@@ -4,7 +4,6 @@ namespace Program;
 
 public class Wizard : ICharacter {
     public string Name {get; set;}
-    private CharacterType Type;
     public float Health {get; set;}
     public ArrayList Items {get; set;}
 
@@ -19,13 +18,6 @@ public class Wizard : ICharacter {
             this.Name = name;
         }
     }
-    public void SetType(CharacterType type) {
-        if (type != null) {
-            this.Type = type;
-        }
-    }
-
-    public CharacterType GetType() { return this.Type; }
 
     public float GetTotalDamage() {
         float dmg = 0;

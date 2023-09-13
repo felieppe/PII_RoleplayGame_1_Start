@@ -11,11 +11,8 @@ public interface ICharacter {
 
     void AddItem(Item item);
     void SetName(string name);
-    void SetType(CharacterType type);
     void Heal(float? h);
     void Damage(float dmg);
-
-    CharacterType GetType();
 
     float GetTotalDamage();
     float GetTotalDefense();
