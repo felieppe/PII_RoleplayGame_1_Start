@@ -2,7 +2,7 @@ using System.Collections;
 
 namespace Program;
 
-public class Elve {
+public class Elve : ICharacter {
     public string Name {get; set;}
     private CharacterType Type;
     public float Health {get; set;}
