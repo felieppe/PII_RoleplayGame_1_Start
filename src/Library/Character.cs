@@ -57,6 +57,9 @@ public class Character {
         } else { this.Health = 100; }
     }
     public void Damage(float dmg) {
-        this.Health -= dmg;
+        if (dmg <= this.Health) { this.Health -= dmg; }
+        else {
+            this.Health = 0;
+        }
     }
 }
