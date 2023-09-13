@@ -21,7 +21,7 @@ public class Item {
     public int GetDefense() {
         return this.Defense;
     }
-    public string GetType() {
+    public new string GetType() {
         return this.Type;
     }
     public int GetCost() {
