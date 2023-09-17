@@ -18,3 +18,5 @@ public interface ICharacter {
     float GetTotalDamage();
     float GetTotalDefense();
 }
+/* por el principio expert cada personaje está a cargo de saber sus valores de daño, defensa, etc,
+también de tener la lista de sus objetos y la capacidad de obtener nuevos y deshacerse de otros */
