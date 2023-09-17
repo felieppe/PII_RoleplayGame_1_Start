@@ -10,10 +10,11 @@ public class SpellBook{
         return this.Spells;
     }
 
-    public void AddSpell(Spell sp) {
+    public bool AddSpell(Spell sp) {
         if (!(Spells.Contains(sp))) {
             Spells.Add(sp);
-        }
+            return true;
+        } else { return false; }
     }
 }
 
