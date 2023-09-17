@@ -27,6 +27,14 @@ public class Item {
     public int GetCost() {
         return this.Cost;
     }
+
+    public bool SetCost(int cost){
+        if (cost < 0) { return false; }
+        else {
+            this.Cost = cost;
+            return true;
+        }
+    }
     public string GetName() {
         return this.Name;
     }

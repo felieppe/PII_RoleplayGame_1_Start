@@ -19,6 +19,7 @@ namespace Program
             bool result = wiz.SetName(newWizardName);
             Assert.False(result);
         }
+
         /*
             JUSTIFICACIÓN:
             Este test se encarga de realizar una prueba, de modo que no pueden haber 2 o 
@@ -33,6 +34,17 @@ namespace Program
             bool result = book.AddSpell(sp);
             bool result2 = book.AddSpell(sp);
             Assert.False(result2);
+        }
+
+        /*
+            JUSTIFICACIÓN:
+            Este test verifica que el costo de los items no sea un número negativo,
+            si es, devuelve false, de lo contrario se guarda el valor asignado del costo.
+        */
+        [Test]
+        public void TestNegativeCost(){
+            Item hacha = new Item("hacha", "Arma", -50, 15, 0);
+            Assert.False(hacha.SetCost(-50));
         }
     }
 }
