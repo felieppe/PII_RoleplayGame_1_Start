@@ -18,8 +18,22 @@ public class Item {
     public int GetDamage() {
         return this.Damage;
     }
+    public bool SetDamage(int damage){
+        if (damage < 0) { return false; }
+        else {
+            this.Damage = damage;
+            return true;
+        }
+    }
     public int GetDefense() {
         return this.Defense;
+    }
+    public bool SetDefense(int defense){
+        if (defense < 0) { return false; }
+        else {
+            this.Defense = defense;
+            return true;
+        }
     }
     public new string GetType() {
         return this.Type;
@@ -27,7 +41,6 @@ public class Item {
     public int GetCost() {
         return this.Cost;
     }
-
     public bool SetCost(int cost){
         if (cost < 0) { return false; }
         else {
