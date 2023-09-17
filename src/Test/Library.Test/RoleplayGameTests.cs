@@ -19,7 +19,12 @@ namespace Program
             bool result = wiz.SetName(newWizardName);
             Assert.False(result);
         }
-        
+        /*
+            JUSTIFICACIÓN:
+            Este test se encarga de realizar una prueba, de modo que no pueden haber 2 o 
+            más hechizos con el mismo nombre, ya que si el nombre se repite 2 veces,
+            el result2(ültimo hechizo agregdo) se considerara falso
+        */
         [Test]
         public void TestDuplicatedSpell(){
             SpellBook book = new SpellBook();
