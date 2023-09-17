@@ -12,6 +12,7 @@ public class Dwarve : ICharacter {
     public string GetName() { return this.Name; }
 
     public void AddItem(Item item) { Items.Add(item); }
+    public void RemoveItem(Item item) { Items.Remove(item); }
     public void SetName(string name) {
         if (string.IsNullOrEmpty(name)) {
             this.Name = name;
