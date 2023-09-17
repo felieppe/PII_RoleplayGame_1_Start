@@ -7,6 +7,8 @@ public class Wizard : ICharacter {
     public float Health {get; set;}
     public ArrayList Items {get; set;}
 
+    private SpellBook Book = null;
+
     public Wizard() {}
 
     public string GetName() { return this.Name; }
@@ -17,6 +19,12 @@ public class Wizard : ICharacter {
     public bool SetName(string name) {
         if (!string.IsNullOrEmpty(name)) {
             this.Name = name;
+            return true;
+        } else { return false; }
+    }
+    public bool SetSpellBook(SpellBook book) {
+        if (!(this.Book.Equals(book))) {
+            this.Book = book;
             return true;
         } else { return false; }
     }
