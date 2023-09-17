@@ -14,10 +14,11 @@ public class Wizard : ICharacter {
     public void AddItem(Item item) { Items.Add(item); }
     public void RemoveItem(Item item) { Items.Remove(item); }
 
-    public void SetName(string name) {
+    public bool SetName(string name) {
         if (string.IsNullOrEmpty(name)) {
             this.Name = name;
-        }
+            return true;
+        } else { return false; }
     }
 
     public float GetTotalDamage() {
