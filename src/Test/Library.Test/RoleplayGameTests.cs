@@ -1,13 +1,16 @@
 using NUnit.Framework;
 
-namespace Test.Library
+namespace Program
 {
     public class RoleplayGameTests
     {
         [Test]
-        public void dummyTest()
-        {
-            Assert.True(true);
+        public void TestBlankWizardName() {
+            Wizard wiz = new Wizard();
+            string newWizardName = "";
+
+            bool result = wiz.SetName(newWizardName);
+            Assert.False(result);
         }
     }
 }
