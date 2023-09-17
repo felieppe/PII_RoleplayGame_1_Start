@@ -11,9 +11,10 @@ public interface ICharacter {
 
     void AddItem(Item item);
     void RemoveItem(Item item);
-    void SetName(string name);
     void Heal(float? h);
     void Damage(float dmg);
+
+    bool SetName(string name);
 
     float GetTotalDamage();
     float GetTotalDefense();
