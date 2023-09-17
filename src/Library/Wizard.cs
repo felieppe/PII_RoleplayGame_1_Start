@@ -15,7 +15,7 @@ public class Wizard : ICharacter {
     public void RemoveItem(Item item) { Items.Remove(item); }
 
     public bool SetName(string name) {
-        if (string.IsNullOrEmpty(name)) {
+        if (!string.IsNullOrEmpty(name)) {
             this.Name = name;
             return true;
         } else { return false; }
