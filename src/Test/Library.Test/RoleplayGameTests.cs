@@ -19,5 +19,15 @@ namespace Program
             bool result = wiz.SetName(newWizardName);
             Assert.False(result);
         }
+        
+        [Test]
+        public void TestDuplicatedSpell(){
+            SpellBook book = new SpellBook();
+            Spell sp = new Spell("Heal");
+
+            bool result = book.AddSpell(sp);
+            bool result2 = book.AddSpell(sp);
+            Assert.False(result2);
+        }
     }
 }
