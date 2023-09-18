@@ -49,10 +49,7 @@ namespace Program
         /*
             JUSTIFICACIÓN:   
             Este test verifica que un mago no tenga mas un libro de hechizos      
-        
         */ 
-            
-
         [Test]
         public void TestDuplicatedSpellBook(){
             SpellBook sps=new SpellBook();
