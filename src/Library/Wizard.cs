@@ -23,7 +23,7 @@ public class Wizard : ICharacter {
         } else { return false; }
     }
     public bool SetSpellBook(SpellBook book) {
-        if (!(this.Book.Equals(book))) {
+        if (this.Book == null) {
             this.Book = book;
             return true;
         } else { return false; }
