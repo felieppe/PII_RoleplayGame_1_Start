@@ -48,7 +48,8 @@ namespace Program
         }
         /*
             JUSTIFICACIÓN:   
-            Este test verifica que un mago no tenga mas un libro de hechizos      
+            Este test verifica que un mago no tenga más de un libro de hechizos, ya que este
+            es unico y personal de cada mago       
         */ 
         [Test]
         public void TestDuplicatedSpellBook(){
