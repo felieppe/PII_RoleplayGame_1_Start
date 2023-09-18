@@ -46,5 +46,21 @@ namespace Program
             Item hacha = new Item("hacha", "Arma", -50, 15, 0);
             Assert.False(hacha.SetCost(-50));
         }
+        /*
+            JUSTIFICACIÓN:   
+            Este test verifica que un mago no tenga mas un libro de hechizos      
+        
+        */ 
+            
+
+        [Test]
+        public void TestDuplicatedSpellBook(){
+            SpellBook sps=new SpellBook();
+            Wizard wiz= new Wizard();
+
+            bool result= wiz.SetSpellBook(sps);
+            bool result2=wiz.SetSpellBook(sps);
+            Assert.False(result2);
+        }
     }
 }
